@@ -1,0 +1,15 @@
+services:
+  redis:
+    image: 'redis:latest'
+    ports:
+      - '6379'
+
+  mongodb:
+    image: 'mongo:latest'
+    ports:
+      - '28017:27017'
+    volumes:
+      - mongodb-data:/data/db
+
+volumes:
+  mongodb-data:
