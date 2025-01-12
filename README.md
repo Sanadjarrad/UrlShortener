@@ -77,7 +77,7 @@ docker build -t urlshortener .
 
 ### 2. Ensure Mongo and Redis are Running
 ```
-docker run -d -p 8080:8080 --name url-shortener url-shortener
+docker run -d -p 8080:8080 --name urlshortener urlshortener
 ```
 
 ## Testing the API
